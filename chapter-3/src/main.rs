@@ -1,14 +1,14 @@
 fn main() {
-    println!("Hello, world!");
-    let x = 6;
-    println!("{}",x);
-
-    let x = "six"; // shadowing 
-    println!("{}",x);
-
-    
-    const SUBSCRIBER_COUNT :u32 = 100_000; // const must be type annotated and not be muted
-
+    // println!("Hello, world!");
+    // let x = 6;
+    // println!("{}",x);
+    //
+    // let x = "six"; // shadowing 
+    // println!("{}",x);
+    //
+    // 
+    // const SUBSCRIBER_COUNT :u32 = 100_000; // const must be type annotated and not be muted
+    //
 
     // data types
     // scaler and compound
@@ -16,7 +16,13 @@ fn main() {
     // compound type : tuple, array
 
     
-    
+    // Functions
+    fn foo(x: i32) ->i32 {
+        return x;
+        x+1
+    }
+
+    println!("{}",foo(3))   
 
 
 }
