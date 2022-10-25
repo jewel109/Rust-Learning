@@ -1,8 +1,12 @@
 fn main(){
 
-    let s1 = String::from("hello");
-    let len = calculate_size(&s1); // here s1 refferecnc is passed 
-    println!("The length of {} is {}", s1, len);
+    let word = first_word(&s);
+
+    println!("{}",word);
+
+    s.clear();
+
+    println!("the first word is : {}",word);
 
     let mut s2 = String::from("Hello");
     change(&mut s2);
