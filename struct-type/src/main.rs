@@ -9,13 +9,39 @@ impl Rectangle{
     fn area(&self) -> u32{
         self.width * self.height
     }
+    
+    fn can_hold(&self, other: &Rectangle) -> bool{
+        self.width > other.width && self.height > other.height
+    }
+    fn squre(size:u32) -> Self{
+        Self { width: size, height: size }
+    }
 }
+
+
+
+
+
 
 fn main() {
     let  rect1 = Rectangle{
-        width:20,
-        height:10
+        width:30,
+        height:50
     };
-    println!("rect1.area is {}", rect1.area());
+    let rect2 = Rectangle{
+        width:10,
+        height:40,
+    };
+
+    let rect3 = Rectangle{
+        width:60,
+        height:45
+    };
+
+    println!("can rect1 hold rect2 ?  {}", rect1.can_hold(&rect2));
+    println!("can rect1 hold rect2 ?  {}", rect1.can_hold(&rect3));
+    println!("squre  {:?}", Rectangle::squre(20));
 
 }
+
+
