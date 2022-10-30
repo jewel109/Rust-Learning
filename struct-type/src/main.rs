@@ -40,8 +40,8 @@ fn main() {
 
     println!("can rect1 hold rect2 ?  {}", rect1.can_hold(&rect2));
     println!("can rect1 hold rect2 ?  {}", rect1.can_hold(&rect3));
-    println!("squre  {:?}", Rectangle::squre(20));
+    println!("squre  {:?}", Rectangle::squre(size));
 
-}
+
 
 
